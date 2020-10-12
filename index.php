@@ -1,22 +1,11 @@
 <?php
 
-$archivoConfig = "conexionBD/conexion.ini";
-$configuracion = parse_ini_file($archivoConfig, true);
+include_once ("clases/ConectarBaseDeDatos.php");
 
-$host = $configuracion["bd"]["host"];
-$usuario = $configuracion["bd"]["usuario"];
-$password = $configuracion["bd"]["password"];
-$bd = $configuracion["bd"]["bd"];
+$conectar = new ConectarBaseDeDatos();
 
-$conexion = new mysqli($host, $usuario, $password, $bd);
+$conexion = $conectar->conectar();
 
-if($conexion->connect_error){
-    echo "ocurrio un error";
-}else{
-
-
-
-}
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
