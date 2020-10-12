@@ -28,7 +28,7 @@ $idAEditar = $_POST["valorEditar"];
 
 echo "
         
-        <form method='post' action='../funciones/editarPokemonEnBD.php' enctype='multipart/form-data'>
+        <form method='post' action='editarPokemonEnBD.php' enctype='multipart/form-data'>
 
                     <input name='id' type='text' placeholder='Ingrese id de pokemon' value='$idAEditar'>
                     <input name='nombre' type='text' placeholder='Ingrese nombre'>

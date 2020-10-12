@@ -26,7 +26,7 @@ if (isset($_POST["descripcion"])) {
     $descripcion  = $_POST["descripcion"];;
 }
 
-echo "$id , $nombre, $tipo, $descripcion";
+
 
 
 $valorErrorArchivo = $_FILES["archivo"]["error"];
@@ -75,7 +75,7 @@ if($conexion->errno){
 
 }
 
-header("Location: ../index/index.php");
+header("Location: ../index.php");
 exit();
 
 ?>

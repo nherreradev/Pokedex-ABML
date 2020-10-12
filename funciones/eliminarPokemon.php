@@ -34,7 +34,7 @@ if(!$resultadoQuery){
     echo "hubo un error en la consulta";
 }else{
 
-    header("Location: ../index/index.php");
+    header("Location: ../index.php");
     exit();
 
 

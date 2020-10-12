@@ -66,7 +66,7 @@ if($conexion->errno){
 
 }
 
-header("Location: ../index/index.php");
+header("Location: ../index.php");
 exit();
 
 ?>
