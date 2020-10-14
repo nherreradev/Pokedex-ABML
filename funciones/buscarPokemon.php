@@ -1,29 +1,14 @@
 <?php
 
+include_once ("path.php");
+$conexion = getPath("funciones/buscarPokemon.php");
 
-
-$archivoConfig = "../conexionBD/conexion.ini";
-$configuracion = parse_ini_file($archivoConfig, true);
-
-$host = $configuracion["bd"]["host"];
-$usuario = $configuracion["bd"]["usuario"];
-$password = $configuracion["bd"]["password"];
-$bd = $configuracion["bd"]["bd"];
-
-$conexion = new mysqli($host, $usuario, $password, $bd);
+/*-------------------------------------------------------------------------*/
 
 
 $nombrePokemon = $_POST["nombrePokemon"];
 
-
 strtolower($nombrePokemon);
-
-if($conexion->errno){
-    echo"ocurrio un error";
-
-}
-
-/*-------------------------------------------------------------------------*/
 
 echo
 

@@ -1,14 +1,7 @@
 <?php
 
-$archivoConfig = "../conexionBD/conexion.ini";
-$configuracion = parse_ini_file($archivoConfig, true);
-
-$host = $configuracion["bd"]["host"];
-$usuario = $configuracion["bd"]["usuario"];
-$password = $configuracion["bd"]["password"];
-$bd = $configuracion["bd"]["bd"];
-
-$conexion = new mysqli($host, $usuario, $password, $bd);
+include_once ("path.php");
+$conexion = getPath("funciones/editarPokemonEnBD.php");
 
 if (isset($_POST["id"])) {
     $id = $_POST["id"];

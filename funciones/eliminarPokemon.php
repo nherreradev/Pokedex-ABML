@@ -1,24 +1,7 @@
 <?php
 
-
-
-$archivoConfig = "../conexionBD/conexion.ini";
-$configuracion = parse_ini_file($archivoConfig, true);
-
-$host = $configuracion["bd"]["host"];
-$usuario = $configuracion["bd"]["usuario"];
-$password = $configuracion["bd"]["password"];
-$bd = $configuracion["bd"]["bd"];
-
-$conexion = new mysqli($host, $usuario, $password, $bd);
-
-if($conexion->connect_error){
-    echo "ocurrio un error";
-}else{
-
-
-
-}
+include_once ("path.php");
+$conexion = getPath("funciones/eliminarPokemon.php");
 
 /*-------------------------------------------------------------------------------------------------------------*/
 

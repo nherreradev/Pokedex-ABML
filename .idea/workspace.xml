@@ -25,6 +25,10 @@
     <list default="true" id="06927113-3627-4a26-b313-14acf136bc99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funciones/buscarPokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/funciones/buscarPokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funciones/cargarPokemonBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/funciones/cargarPokemonBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funciones/editarPokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/funciones/editarPokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funciones/editarPokemonEnBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/funciones/editarPokemonEnBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funciones/eliminarPokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/funciones/eliminarPokemon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +85,10 @@
       <workItem from="1602511682988" duration="2387000" />
       <workItem from="1602515205472" duration="653000" />
       <workItem from="1602516009833" duration="11193000" />
-      <workItem from="1602540897030" duration="1087000" />
+      <workItem from="1602540897030" duration="1475000" />
+      <workItem from="1602591491878" duration="620000" />
+      <workItem from="1602635677445" duration="2888000" />
+      <workItem from="1602676540288" duration="7698000" />
     </task>
     <servers />
   </component>
@@ -121,21 +128,24 @@
       <screen x="0" y="-768" width="1366" height="728" />
     </state>
     <state x="459" y="-681" key="NewPhpClassDialog/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.-768.1366.728" timestamp="1602526881524" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1602515335584">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1602680288414">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="-481" key="NewPhpFileDialog/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.-768.1366.728" timestamp="1602455631252" />
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.0.1366.728" timestamp="1602515335584" />
+    <state x="517" y="-481" key="NewPhpFileDialog/0.0.1366.728/0.-768.1366.728@0.-768.1366.728" timestamp="1602676879221" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728/0.-768.1366.728@0.0.1366.728" timestamp="1602680288414" />
     <state x="184" y="-759" key="SettingsEditor" timestamp="1602523469750">
       <screen x="0" y="-768" width="1366" height="728" />
     </state>
     <state x="184" y="-759" key="SettingsEditor/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.-768.1366.728" timestamp="1602523469750" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.0.1366.728" timestamp="1602513672927" />
-    <state x="0" y="0" width="1102" height="715" maximized="true" key="dock-window-1" timestamp="1602527296677">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="156" y="-768" width="1081" height="715" key="dock-window-1" timestamp="1602693479189">
+      <screen x="0" y="-768" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="1102" height="715" maximized="true" key="dock-window-1/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.-768.1366.728" timestamp="1602527296677" />
     <state x="-1280" y="0" width="1142" height="715" maximized="true" key="dock-window-1/0.0.1366.728/0.-768.1366.728/-1280.0.1280.680@0.0.1366.728" timestamp="1602471445485" />
+    <state x="156" y="-768" width="1081" height="715" key="dock-window-1/0.0.1366.728/0.-768.1366.728@0.0.1366.728" timestamp="1602693479189" />
     <state x="0" y="-2" width="1164" height="717" key="dock-window-2" timestamp="1602215799235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
