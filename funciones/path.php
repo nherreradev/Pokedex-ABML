@@ -2,9 +2,9 @@
 
 function getPath($rutaEspecifica){
 
-    $ruta = $_SERVER["DOCUMENT_ROOT"] . "/" . $rutaEspecifica;
+    $ruta = $_SERVER["DOCUMENT_ROOT"] . "/pokemons/" . $rutaEspecifica;
 
-    $archivoConfig = $_SERVER["DOCUMENT_ROOT"] . "/conexionBD/conexion.ini";
+    $archivoConfig = $_SERVER["DOCUMENT_ROOT"] . "/pokemons/conexionBD/conexion.ini";
 
     $configuracion = parse_ini_file($archivoConfig, true);
 

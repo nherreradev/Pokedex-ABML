@@ -94,23 +94,31 @@ if( $variableSession != 1){
 
             for($j=0;$j<count($filaObtenida[$i]);$j++) {
 
+                /*numero*/
                 if($j == 0){
                     $id = $filaObtenida[$i][$j];
                     echo"<td>$id</td>";
 
                 }
 
+                /*imagen*/
                 if($j == 1){
                     $imagenObtenida = $filaObtenida[$i][$j];
                     echo"<td><img width='50'src='$imagenObtenida'></td>";
 
+
+
+                   
+
                 }
 
+                /*nombre*/
                 if($j == 2){
                     $nombre = $filaObtenida[$i][$j];
                     echo"<td>$nombre</td>";
                 }
 
+                /*tipo*/
                 if($j == 3){
 
                     $tipoString = $filaObtenida[$i][$j];
@@ -232,14 +240,21 @@ if( $variableSession != 1){
 
 
 <div class='w3-container w3-teal'>
-    <div class='w3-half'>
+    <div class='w3-third'>
         <h1>
             Pokedex
         </h1>
     </div>
-    <div class='w3-half'>
+    <div class='w3-third'>
         <h2>Bienvenido</h2>
     </div>
+    
+    <form class='w3-third' action='funciones/logout.php'>
+    
+        <button class='w3-btn w3-round-large w3-padding-24'>Logout</button>
+    
+    </form>
+    
 
 </div>
     
@@ -299,6 +314,7 @@ if( $variableSession != 1){
                 if($j == 1){
                     $imagenObtenida = $filaObtenida[$i][$j];
                     echo"<td><img width='50'src='$imagenObtenida'></td>";
+
 
                 }
 

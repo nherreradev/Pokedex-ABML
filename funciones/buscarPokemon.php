@@ -34,13 +34,7 @@ echo
             Pokedex
         </h1>
     </div>
-    <div class='w3-half'>
-        <form action='' class='w3-content w3-padding-24'>
-            <input type='text' name='' id='' placeholder='Usuario'>
-            <input type='text' name='' id='' placeholder='Password'>
-            <button type='submit'>Ingresar</button>
-        </form>
-    </div>
+   
 
 </div>
     
@@ -153,7 +147,8 @@ if ($resultadoDeLaConsulta) {
 
                 if($j == 1){
                     $imagenObtenida = $filaObtenida[$i][$j];
-                    echo"<td><img width='50'src='$imagenObtenida'></td>";
+                    echo"<td><img width='50'src='".".$imagenObtenida'></td>";
+
 
                 }
 

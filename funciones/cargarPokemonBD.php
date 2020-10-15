@@ -30,7 +30,7 @@ if ( $valorErrorArchivo > 0){
 
 }else{
 
-    $carpeta = "../imagenes/";
+    $carpeta = "./imagenes/";
 
     $ubicacionTemporalDeLaImagen = $_FILES["archivo"]["tmp_name"];
 
@@ -38,7 +38,7 @@ if ( $valorErrorArchivo > 0){
 
 
 
-    move_uploaded_file($ubicacionTemporalDeLaImagen , $carpeta . $nombreDelArchivo);
+    move_uploaded_file($ubicacionTemporalDeLaImagen , ".".$carpeta . $nombreDelArchivo);
 
 
 }
@@ -46,6 +46,7 @@ if ( $valorErrorArchivo > 0){
 $urlImagen = $carpeta.$nombreDelArchivo;
 
 strtolower($tipo);
+
 
 $consultaSql = "insert into pokemon(id,url_imagen, nombre, tipo, descripcion)VALUES ($id, '$urlImagen' , '$nombre', '$tipo', '$descripcion')";
 
